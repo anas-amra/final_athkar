@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F7F8FB">
+
+    <!-- Back arrow (start / top) -->
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back_50"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        />
+
+    <!-- Title centered in the top bar -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حجم النص"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#111827"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp" />
+
+    <!-- Rounded preview card -->
+    <TextView
+        android:id="@+id/tvPreviewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="معاينة"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#6B7280"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="4dp" />
+
+    <TextView
+        android:id="@+id/tvPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPreviewLabel"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:background="@drawable/bg_panel_rounded"
+        android:text="هذه معاينة للنص. اضبط شريط التمرير أدناه لرؤية كيفية ظهور النص في التطبيق."
+        android:textSize="16sp"
+        android:textColor="#1F2937" />
+
+    <!-- Section label -->
+    <TextView
+        android:id="@+id/tvAdjust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ضبط الحجم"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#111827"
+        android:layout_below="@id/tvPreview"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="4dp" />
+
+    <!-- Left 'A' -->
+    <TextView
+        android:id="@+id/labelAStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="12sp"
+        android:textColor="#9CA3AF"
+        android:layout_below="@id/tvAdjust"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true" />
+
+    <!-- Right 'A' -->
+    <TextView
+        android:id="@+id/labelAEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="20sp"
+        android:textColor="#9CA3AF"
+        android:layout_alignBaseline="@id/labelAStart"
+        android:layout_alignParentEnd="true" />
+
+    <!-- Slider centered between the A labels -->
+    <SeekBar
+        android:id="@+id/seekTextSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/labelAStart"
+        android:layout_toStartOf="@id/labelAEnd"
+        android:layout_alignBaseline="@id/labelAStart"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:max="20" />
+
+    <!-- Primary rounded button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="إعادة التعيين إلى الوضع الافتراضي"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_button_primary"
+        android:layout_below="@id/seekTextSize"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp" />
+
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FCFD">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:padding="16dp"
+        tools:context=".casket">
+
+        <!-- العنوان -->
+        <TextView
+            android:id="@+id/tv_titleCasket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_titlebar"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="صلاة الجنازة"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- الذكر 1 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardCasket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_card"
+            android:elevation="6dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titleCasket"
+            tools:context=".casket">
+
+            <TextView
+                android:id="@+id/tv_titlecardCasket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="التكبيرة الأولىِ"
+                android:textAlignment="center"
+                android:textColor="#0c575d"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Athkar -->
+            <TextView
+                android:id="@+id/tv_athkarCasket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="6dp"
+                android:paddingBottom="8dp"
+                android:text="سورة الفاتحة: ﴿بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ ١ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ٢ الرَّحْمَنِ الرَّحِيمِ ٣ مَالِكِ يَوْمِ الدِّينِ ٤ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ٥ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ٦ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ ٧﴾"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titlecardCasket" />
+
+            <!-- Count -->
+            <TextView
+                android:id="@+id/tv_countCasket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:text="مرة واحدة"
+                android:textColor="#0c575d"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_athkarCasket" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- الذكر 2 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardCasket2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_card"
+            android:elevation="6dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardCasket"
+            tools:context=".casket">
+
+            <TextView
+                android:id="@+id/tv_titlecardCasket2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="التكبيرة الثانيةِ"
+                android:textAlignment="center"
+                android:textColor="#0c575d"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Athkar -->
+            <TextView
+                android:id="@+id/tv_athkarCasket2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="6dp"
+                android:paddingBottom="8dp"
+                android:text="بعد التكبيرة الثانية يصلي على النبي صلى الله عليه وسلم كما يفعل في التشهد، أي يقول: (اللّهمَّ صل على محمدٍ وعَلَى آلِ محمدٍ كما صليتَ على إِبراهيمَ وعلى آلِ إبراهيمَ إنكَ حَميدٌ مَجيد، اللّهمَّ بارك على محمدٍ وعلى آلِ محمدٍ كما باركتَ على إِبراهيم وعلى آلِ إبراهيمَ إِنَّكَ حَميدٌ مَجيد)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titlecardCasket2" />
+
+            <!-- Count -->
+            <TextView
+                android:id="@+id/tv_countCasket2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:text="مرة واحدة"
+                android:textColor="#0c575d"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_athkarCasket2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- الذكر 3 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardCasket3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_card"
+            android:elevation="6dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardCasket2"
+            tools:context=".casket">
+
+            <TextView
+                android:id="@+id/tv_titlecardCasket3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="التكبيرة الثالثةِ"
+                android:textAlignment="center"
+                android:textColor="#0c575d"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Athkar -->
+            <TextView
+                android:id="@+id/tv_athkarCasket3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="6dp"
+                android:paddingBottom="8dp"
+                android:text="بعد التكبيرة الثالثة يدعو للميت بما ورد من أدعية، ومن ذلك قول:
+(اللهمَّ اغْفِرْ لَهُ وَارْحَمْهُ وَعافِهِ وَاعْفِ عَنْهُ، وَأَكْرِمْ نَزْلَهُ وَوَسِّعْ مَدْخَلَهُ وَاغْسِلْهُ بالماءِ والثلج وَالبَرَدِ، وَنَقِّهِ مِنَ الخطايا كما نَقَّيْتَ الثَّوْبَ الأبْيَضَ مِنَ الدَّنَسِ، وَأَبْدِلْهُ داراً خَيراً من دارِه وَأَهْلاً خَيْراً مِنْ أَهْلِهِ، وَزَوْجَةَ خَيْراً مِنْ زَوْجِهِ، وَأَدْخِلْهُ الجَنَّةَ وَنَجِّهِ مِنَ النّارِ، وَقِه عَذابَ القَبْرِ)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titlecardCasket3" />
+
+            <!-- Count -->
+            <TextView
+                android:id="@+id/tv_countCasket3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:text="مرة واحدة"
+                android:textColor="#0c575d"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_athkarCasket3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- الذكر 4 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardCasket4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+
+            android:background="@drawable/rounded_card"
+            android:elevation="6dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardCasket3"
+            tools:context=".casket">
+
+            <TextView
+                android:id="@+id/tv_titlecardCasket4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="التكبيرة الرابعةِ"
+                android:textAlignment="center"
+                android:textColor="#0c575d"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Athkar -->
+            <TextView
+                android:id="@+id/tv_athkarCasket4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="6dp"
+                android:paddingBottom="8dp"
+                android:text="بعد التكبيرة الرابعة يقول: (اللَّهُمَّ لاَ تَحْرِمْنَا أَجْرَهُ، وَلاَ تَفْتِنَّا بَعْدَهُ) ذكر النووي في كتاب رياض الصالحين وقال الشيخ ابن جبرين إنه الأفضل.
+أو يسكت قليلاً، ثم يُسَلم عن يمينه تسليمة واحدة، لفعله صلى الله عليه وسلم،"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titlecardCasket4" />
+
+            <!-- Count -->
+            <TextView
+                android:id="@+id/tv_countCasket4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:text="مرة واحدة"
+                android:textColor="#0c575d"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_athkarCasket4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+
+

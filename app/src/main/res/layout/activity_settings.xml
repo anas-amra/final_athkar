@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:background="#E7F2F2"
+    >
+
+
+    <!-- العنوان -->
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الاعدادات"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_titlebar"
+        android:padding="12dp"
+        />
+
+
+    <Button
+        android:id="@+id/btn_textSize_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تغيير حجم النص"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#0c575d"
+        android:backgroundTint="#D6EDED"
+        android:layout_below="@id/settings_title"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_textSize_settings"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

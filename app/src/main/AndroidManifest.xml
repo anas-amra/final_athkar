@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test"
+        tools:targetApi="31">
+        <activity
+            android:name=".loan"
+            android:exported="false" />
+        <activity
+            android:name=".casket"
+            android:exported="false" />
+        <activity
+            android:name=".istekhara"
+            android:exported="false" />
+        <activity
+            android:name=".athan"
+            android:exported="false" />
+        <activity
+            android:name=".after_pray"
+            android:exported="false" />
+        <activity
+            android:name=".athkar_pray"
+            android:exported="false" />
+        <activity
+            android:name=".elec_sebha"
+            android:exported="false" />
+        <activity
+            android:name=".tasbeeh"
+            android:exported="false" />
+        <activity
+            android:name=".sleep_pray"
+            android:exported="false" />
+        <activity
+            android:name=".wake_up"
+            android:exported="false" />
+        <activity
+            android:name=".mosque"
+            android:exported="false" />
+        <activity
+            android:name=".travel"
+            android:exported="false" />
+        <activity
+            android:name=".evening"
+            android:exported="false" />
+        <activity
+            android:name=".morning"
+            android:exported="false" />
+        <activity
+            android:name=".nightmode"
+            android:exported="false" />
+        <activity
+            android:name=".settings"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

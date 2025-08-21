@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FCFD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layoutDirection="rtl">
+
+        <!-- العنوان -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أذكار الإستيقاظ من النوم"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_titlebar"
+            android:padding="12dp"
+            android:gravity="center" />
+
+        <!-- الذكر 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_card"
+            android:elevation="6dp">
+
+
+            <!-- Athkar -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الحَمْـدُ لِلّهِ الّذي أَحْـيانا بَعْـدَ ما أَماتَـنا وَإليه النُّـشور. "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:lineSpacingExtra="6dp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp" />
+
+            <!-- Count -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مرة واحدة"
+                android:textSize="16sp"
+                android:textColor="#0c575d"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- الذكر 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_card"
+            android:elevation="6dp">
+
+            <!-- Athkar -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الحمدُ للهِ الذي عافاني في جَسَدي وَرَدّ عَليّ روحي وَأَذِنَ لي بِذِكْرِه. "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:lineSpacingExtra="6dp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp" />
+
+
+            <!-- Count -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مرة واحدة"
+                android:textSize="16sp"
+                android:textColor="#0c575d"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- الذكر 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_card"
+            android:elevation="6dp">
+
+            <!-- Athkar -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="لا إلهَ إلاّ اللّهُ وَحْـدَهُ لا شَـريكَ له، لهُ المُلـكُ ولهُ الحَمـد، وهوَ على كلّ شيءٍ قدير، سُـبْحانَ اللهِ، والحمْـدُ لله ، ولا إلهَ إلاّ اللهُ واللهُ أكبَر، وَلا حَولَ وَلا قوّة إلاّ باللّهِ العليّ العظيم. رَبِّ اغْفرْ لي."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:lineSpacingExtra="6dp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp" />
+
+
+            <!-- Count -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مرة واحدة"
+                android:textSize="16sp"
+                android:textColor="#0c575d"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
